@@ -168,7 +168,7 @@
             margin-bottom: 60px;
         }
 
-        /* Galería de Productos Interactiva */
+        /* Galería de Productos Interactiva (2 columnas para Bidones y Dispensers) */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -192,27 +192,6 @@
             border-color: var(--accent);
         }
 
-        /* Contenedor dual para mostrar ambas fotos juntas en la tarjeta */
-        .product-img-dual {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 240px;
-            overflow: hidden;
-            background: #ffffff;
-        }
-
-        .product-img-dual img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Muestra la foto completa sin recortarla */
-            padding: 10px;
-            transition: transform 0.5s ease;
-        }
-
-        .product-card:hover .product-img-dual img {
-            transform: scale(1.05);
-        }
-
         .product-img-wrapper {
             height: 240px;
             overflow: hidden;
@@ -223,12 +202,13 @@
         .product-img-wrapper img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain; /* Muestra la foto completa sin recortar */
+            padding: 15px;
             transition: transform 0.5s ease;
         }
 
         .product-card:hover .product-img-wrapper img {
-            transform: scale(1.08);
+            transform: scale(1.05);
         }
 
         .product-info {
@@ -451,32 +431,32 @@
         </div>
     </section>
 
-    <!-- Sección Galería de Productos -->
+    <!-- Sección Galería de Productos (2 Tarjetas: Bidones y Dispensers) -->
     <section id="productos">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Nuestros Productos y Servicios</h2>
+            <h2 class="section-title" data-aos="fade-up">Nuestros Productos</h2>
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Soluciones de hidratación diseñadas bajo estrictos controles sanitarios</p>
             
             <div class="products-grid">
                 <!-- Tarjeta 1: Bidones -->
                 <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-img-dual">
+                    <div class="product-img-wrapper">
                         <img src="foto-bidon.png" alt="Bidones de Agua Tratada">
                     </div>
                     <div class="product-info">
-                        <h3>Bidones de 12L / 20L y Dispensers</h3>
-                        <p>Bidones de 12L y 20L para al hogar o empresas.</p>
+                        <h3>Bidones de 12L y 20L</h3>
+                        <p>Agua purificada procesada bajo rigurosos controles de calidad para asegurar la hidratación más sana en tu hogar o comercio.</p>
                     </div>
                 </div>
 
-                <!-- Tarjeta 2 -->
+                <!-- Tarjeta 2: Dispensers Frío Calor -->
                 <div class="product-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="product-img-wrapper">
                         <img src="foto-dispenser.png" alt="Dispensers Frío Calor">
                     </div>
                     <div class="product-info">
-                        <h3>Dispensers Frío Calor</h3>
-                        <p>Alquiler de equipos modernos de alta eficiencia (frío-calor).</p>
+                        <h3>Dispensers Frío-Calor</h3>
+                        <p>Venta y alquiler de equipos modernos de alta eficiencia para que disfrutes de agua fría o caliente al instante.</p>
                     </div>
                 </div>
             </div>
