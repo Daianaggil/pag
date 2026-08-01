@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agua San Juan - Agua Tratada, Soda y Hielo</title>
+    <title>Agua San Juan - Agua Tratada y Dispensers</title>
     <!-- Fuente de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -122,35 +122,32 @@
             color: #0f172a;
         }
 
-        /* Products Grid */
+        /* Products Grid (Centrado y adaptado a 1 sola tarjeta principal amplia) */
         .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            display: flex;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .card {
             background: white;
-            padding: 35px 25px;
+            padding: 40px 30px;
             border-radius: 10px;
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+            width: 100%;
         }
 
         .card h3 {
             color: #0284c7;
             margin-bottom: 15px;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
 
         .card p {
             color: #64748b;
+            font-size: 1.1rem;
         }
 
         /* About Section */
@@ -272,7 +269,7 @@
     <section id="inicio" class="hero">
         <div class="container hero-content">
             <h2>Calidad y Pureza para tu Hogar y Comercio</h2>
-            <p>Especialistas en la producción y distribución de agua tratada, soda y hielo con entrega en todo San Juan.</p>
+            <p>Especialistas en la producción y distribución de agua tratada con entrega en todo San Juan.</p>
             <a href="#contacto" class="btn">Hacé tu pedido</a>
         </div>
     </section>
@@ -283,15 +280,7 @@
         <div class="products-grid">
             <div class="card">
                 <h3>Agua Tratada y Dispensers</h3>
-                <p>Bidones purificados de <strong>12 L y 20 L</strong> bajo estrictos controles de calidad. También contamos con venta y alquiler de <strong>dispensers frío-calor</strong>.</p>
-            </div>
-            <div class="card">
-                <h3>Soda</h3>
-                <p>Sifones con el punto justo de gas, ideales para acompañar tus comidas todos los días.</p>
-            </div>
-            <div class="card">
-                <h3>Hielo</h3>
-                <p>Hielo en bolsa cristalino y de larga duración para tus reuniones, hogares y eventos.</p>
+                <p>Bidones purificados de <strong>12 L y 20 L</strong> bajo estrictos controles de calidad para asegurar la mejor hidratación. También contamos con venta y alquiler de <strong>dispensers frío-calor</strong>.</p>
             </div>
         </div>
     </section>
@@ -310,7 +299,7 @@
     <!-- Sección Contacto -->
     <section id="contacto" class="container section">
         <h2>Contacto</h2>
-        <p>¿Querés recibir nuestros productos en tu domicilio o comercio en todo San Juan? Escribinos por WhatsApp o correo.</p>
+        <p>¿Querés recibir nuestros bidones o dispensers en tu domicilio o comercio en todo San Juan? Escribinos por WhatsApp o correo.</p>
         <div class="contact-info">
             <p>📍 <strong>San Juan, Argentina (Cobertura en toda la provincia)</strong></p>
             <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5492645099136" target="_blank">+54 9 2645 09-9136</a></p>
